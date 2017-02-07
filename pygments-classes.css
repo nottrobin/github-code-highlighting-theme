@@ -63,7 +63,7 @@
 
 .codehilite .c {color:#969896;}
 .codehilite .cm {color:#969896;}
-.codehilite .cp {color:#969896;}
+.codehilite .cp {font-weight: bold; color:#1d3e81;}
 .codehilite .c1 {color:#969896;}
 .codehilite .cs {color:#969896;}
 
