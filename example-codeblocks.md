@@ -14,6 +14,8 @@ hooks: # Top-level YAML attribute, parallel to `apps`
 ``` python
 from fish.chips import MyLunch
 
+# A python comment
+
 class SomeClass:
   arg_one: "hello"
 
@@ -31,16 +33,47 @@ class SomeClass:
     return HELLO_WORLD
 ```
 
+``` markdown
+# Hello
+
+A line with [a link](http://somewhere.com).
+
+Top level 2
+===
+
+a [nother link][nother], *this* time with **reference** style.
+
+## Second level heading
+
+### Third level heading
+
+Second level again
+---
+
+#### Fourth
+
+---
+
+[nother]: http://example.com "An example link"
+
+```
+
 ``` html
 <!doctype html>
 
 <html>
   <body>
+    <!-- example document -->
     <script>
       document.write('hello world');
     </script>
+    <style>
+      h1 {font-weight: bold;}
+    </style>
     <div class="highlighter-rouge">
+      <h1>First heading</h1>
       <p>Hello&nbsp;world</p>
+      <h2>Second heading</h2>
       <br/>
       <pre class="highlight">
         <code>
@@ -53,9 +86,15 @@ class SomeClass:
 ```
 
 ``` JavaScript
+/**
+ * Multiline comment
+ * line two
+ */
 function Point(x, y) {
     this.x = x;
     this.y = y;
+
+    // Normal comment
 }
 Point.prototype = {
     dist: function () {
