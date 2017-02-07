@@ -1,6 +1,6 @@
 .codehilite .hll {color:#595e62;}
 
-.codehilite .w {}
+.codehilite .w {color: #333;}
 .codehilite .esc {color:#63a35c;}
 .codehilite .err {color:#333;}
 .codehilite .x {color:#333;}
@@ -77,5 +77,4 @@
 .codehilite .gp {color:#333;}
 .codehilite .gs {color:#333;}
 .codehilite .gu {font-weight: bold, #1d3e81;}
-.codehilite .gt {color:#333"
-}
+.codehilite .gt {color:#333"}
