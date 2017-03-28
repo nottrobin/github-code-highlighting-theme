@@ -1,0 +1,198 @@
+// Colour variables
+$code-dark-grey: #333;
+$code-shuttle-grey: #595e62;
+$code-light-grey: #969896;
+$code-off-white: #f8f8f8;
+$code-flat-grey: #808080;
+$code-orange-white: #ffecec;
+$code-yellow-white: #ffe3b4;
+$code-extra-light-grey: #d8d8d8;
+$code-green-white: #eaffea;
+$code-silver: #c0c0c0;
+$code-pastel-green: #63a35c;
+$code-green: #55a532;
+$code-violet: #795da3;
+$code-yellow: #ef9700;
+$code-brown: #693a17;
+$code-magenta: #a71d5d;
+$code-light-blue: #0086b3;
+$code-grey-blue: #008080;
+$code-jacksons-purple: #183691;
+$code-grey-blue: #1d3e81;
+$code-orange: #ed6a43;
+$code-orange-red: #bd2c00;
+$code-red: #b52a1d;
+
+// Prettylights
+// ===
+.pl-c{color: $code-light-grey;}
+.pl-c1, .pl-s .pl-v {color: $code-light-blue;}
+.pl-e, .pl-en {color: $code-violet;}
+.pl-smi, .pl-s .pl-s1 {color: $code-dark-grey;}
+.pl-ent {color: $code-pastel-green;}
+.pl-k {color: $code-magenta;}
+.pl-s, .pl-pds, .pl-s .pl-pse .pl-s1,.pl-sr, .pl-sr .pl-cce, .pl-sr .pl-sre, .pl-sr .pl-sra {color: $code-jacksons-purple;}
+.pl-v,.pl-smw {color: $code-orange;}
+.pl-bu {color: $code-red;}
+.pl-ii, .pl-c2 {
+  color: $code-off-white;
+  background-color: $code-red;
+}
+.pl-c2::before {content: "^M";}
+.pl-sr .pl-cce {
+  font-weight: bold;
+  color: $code-pastel-green;
+}
+.pl-ml {color: $code-brown;}
+.pl-mh, .pl-mh .pl-en, .pl-ms{
+  font-weight: bold;
+  color: $code-grey-blue;
+}
+.pl-mq {color: $code-grey-blue;}
+.pl-mi {
+  font-style:italic;
+  color: $code-dark-grey;
+}
+.pl-mb {
+  font-weight: bold;
+  color: $code-dark-grey;
+}
+.pl-md {
+  color: $code-orange-red;
+  background-color: $code-orange-white;
+}
+.pl-mi1 {
+  color: $code-green;
+  background-color: $code-green-white;
+}
+.pl-mc {
+  color: $code-yellow;
+  background-color: $code-yellow-white;
+}
+.pl-mi2 {
+  color: $code-extra-light-grey;
+  background-color: $code-flat-grey
+}
+.pl-mdr {font-weight:bold;color: $code-violet;}
+.pl-mo {color: $code-grey-blue;}
+.pl-ba {color: $code-shuttle-grey;}
+.pl-sg {color: $code-silver;}
+.pl-corl {
+  text-decoration:underline;
+  color: $code-jacksons-purple;
+}
+
+// Pygments
+// ===
+.codehilite {
+  .hll {color: $code-shuttle-grey;}
+  .w, .whitespace {color: $code-dark-grey;}
+  .esc, .escape {color: $code-pastel-green;}
+  .err, .error {color: $code-dark-grey;}
+  .x, .other {color: $code-dark-grey;}
+
+  .k, .keyword {color: $code-magenta;}
+  .kc, .keyword-constant {color: $code-light-blue;}
+  .kd, .keyword-declaration {color: $code-magenta;}
+  .kn, .keyword-namespace {color: $code-magenta;}
+  .kp, .keyword-pseudo {color: $code-light-blue;}
+  .kr, .keyword-reserved {color: $code-light-blue;}
+  .kt, .keyword-type {color: $code-light-blue;}
+
+  .n, .name {color: $code-dark-grey;}
+  .na, .name-attribute {color: $code-violet;}
+  .nb, .name.builtin {color: $code-light-blue;}
+  .bp, .name-builtin-pseudo {color: $code-orange;}
+  .nc, .name-class {color: $code-violet;}
+  .no, .name-constant {color: $code-light-blue;}
+  .nd, .name-decorator {color: $code-dark-grey;}
+  .ni, .name-entity {color: $code-light-blue;}
+  .ne, .name-exception {color: $code-orange;}
+  .nf, .name-function {color: $code-dark-grey;}
+  .py, .name-property {color: $code-orange;}
+  .nl, .name-label {color: $code-light-blue;}
+  .nn, .name-namespace {color: $code-dark-grey;}
+  .nx, .name-other {color: $code-violet;}
+  .nt, .name-tag {color: $code-pastel-green;}
+  .nv, .name-variable {color: $code-jacksons-purple;}
+  .vc, .name-variable-class {color: $code-orange;}
+  .vg, .name-variable-global {color: $code-orange;}
+  .vi, .name-variable-instance {color: $code-orange;}
+
+  .l, .literal {color: $code-pastel-green;}
+  .ld, .literal-date {color: $code-violet;}
+
+  .s, .string {color: $code-jacksons-purple;}
+  .sb, .string-backtick {color: $code-shuttle-grey;}
+  .sc, .string-char {color: $code-jacksons-purple;}
+  .sd, .string-doc {color: $code-jacksons-purple;}
+  .s2, .string-double {color: $code-jacksons-purple;}
+  .se, .string-escape {color: $code-jacksons-purple;}
+  .sh, .string-heredoc {color: $code-jacksons-purple;}
+  .si, .string-interpol {color: $code-jacksons-purple;}
+  .sx, .string-other {color: $code-jacksons-purple;}
+  .sr, .string-regex {color: $code-jacksons-purple;}
+  .s1, .string-single {color: $code-jacksons-purple;}
+  .ss, .string-symbol {color: $code-magenta;}
+
+  .m, .number {color: $code-light-blue;}
+  .mb, .number-bin {color: $code-light-blue;}
+  .mf, .number-float {color: $code-light-blue;}
+  .mh, .number-hex {color: $code-light-blue;}
+  .mi, .number-integer {color: $code-light-blue;}
+  .il, .number-integer-long {color: $code-light-blue;}
+  .mo, .number-oct {color: $code-light-blue;}
+
+  .o, .operator {color: $code-dark-grey;}
+  .ow, .operator-word {color: $code-magenta;}
+  .p, .punctuation {color: $code-jacksons-purple;}
+
+  .c, .comment {color: $code-shuttle-grey;}
+  .cm, .comment-multiline {color: $code-shuttle-grey;}
+  .cp, .comment-preproc {font-weight: bold; color:$code-grey-blue;}
+  .c1, .comment-single {color: $code-shuttle-grey;}
+  .cs, .comment-special {color: $code-shuttle-grey;}
+
+  .g, .generic {color: $code-light-blue;}
+  .gd, .generic-deleted {
+    color:$code-orange-red;
+    background-color:$code-orange-white;
+  }
+  .ge, .generic-emph {color:$code-red;}
+  .gr, .generic-error {color:$code-red;}
+  .gh, .generic-heading {
+    font-weight: bold;
+    color: $code-grey-blue;
+  }
+  .gi, .generic-inserted {
+    color:$code-green;
+    background-color:$code-green-white;
+  }
+  .go, .generic-output {color: $code-dark-grey;}
+  .gp, .generic-prompt {color: $code-dark-grey;}
+  .gs, .generic-strong {color: $code-dark-grey;}
+  .gu, .generic-subheading {font-weight: bold, $code-grey-blue;}
+  .gt, .generic-traceback {color: $code-dark-grey;}
+}
+
+// highlight.js classes
+// ===
+.hljs-emphasis {font-style: italic;}
+.hljs-strong {font-weight: bold;}
+.hljs-comment {color: $code-shuttle-grey;}
+.hljs-string {color: $code-jacksons-purple;}
+.hljs-number {color: $code-light-blue;}
+.hljs-name {color: $code-pastel-green}
+.hljs-selector-tag {color: $code-pastel-green}
+.hljs-link {color: $code-light-blue;}
+.hljs-keyword {color: $code-magenta;}
+.hljs-attribute {color: $code-magenta;}
+.hljs-attr {color: $code-violet;}
+.hljs-built_in {color: $code-light-blue;}
+.hljs-title {color: $code-violet;}
+
+.hljs-section,
+.hljs-meta {
+  font-weight: bold;
+  color:$code-grey-blue;
+}

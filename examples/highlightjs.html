@@ -1,0 +1,186 @@
+<link rel="stylesheet" href="../build/theme.css" />
+
+<h1>highlight.js</h1>
+
+<h2>YAML</h2>
+
+<pre><code class="yaml">
+hooks: # Top-level YAML attribute, parallel to `apps`
+    upgrade: # Hook name, corresponds to executable name
+        plugs: [network] # Or any other plugs required by this hook
+</code></pre>
+
+<h2>Python</h2>
+
+<pre><code>
+from fish.chips import MyLunch
+
+# A python comment
+
+class SomeClass:
+  arg_one: "hello"
+
+  def a_method(argument, argument2=value):
+    """
+    Docstring
+    """
+
+    variable = "string"
+    another = 123
+
+    if some_condition >= 20 and x == y:
+      print "go away"
+
+    return HELLO_WORLD
+</code></pre>
+
+<h2>Markdown</h2>
+
+<pre><code>
+# Hello
+
+A line with [a link](http://somewhere.com).
+
+Top level 2
+===
+
+a [nother link][nother], *this* time with **reference** style.
+
+## Second level heading
+
+### Third level heading
+
+Second level again
+---
+
+#### Fourth
+
+---
+
+[nother]: http://example.com "An example link"
+
+</code></pre>
+
+<h2>HTML</h2>
+
+<pre><code><code class="html">
+&lt;!doctype html&gt;
+
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;!-- example document --&gt;
+    &lt;script&gt;
+      document.write(&#39;hello world&#39;);
+    &lt;/script&gt;
+    &lt;style&gt;
+      h1 {font-weight: bold;}
+    &lt;/style&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;
+      &lt;h1&gt;First heading&lt;/h1&gt;
+      &lt;p&gt;Hello&amp;nbsp;world&lt;/p&gt;
+      &lt;h2&gt;Second heading&lt;/h2&gt;
+      &lt;br/&gt;
+      &lt;pre class=&quot;highlight&quot;&gt;
+        &lt;code&gt;
+          &lt;!-- Code --&gt;
+        &lt;/code&gt;
+      &lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></code></pre>
+
+<h2>JavaScript</h2>
+
+<pre><code>
+/**
+ * Multiline comment
+ * line two
+ */
+function Point(x, y) {
+    this.x = x;
+    this.y = y;
+
+    // Normal comment
+}
+Point.prototype = {
+    dist: function () {
+        return Math.sqrt((this.x*this.x)+(this.y*this.y));
+    },
+    toString: function () {
+        return "("+this.x+", "+this.y+")";
+    }
+}
+</code></pre>
+
+<h2>Bash</h2>
+
+<pre><code class="bash">
+$ sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+$ ifconfig eth0 | grep inet | awk '{ print $2 }'
+By default, a MySQL installation has an anonymous user, allowing anyone
+to log into MySQL without having to have a user account created for
+them.  This is intended only for testing, and to make the installation
+go a bit smoother.  You should remove them before moving into a
+production environment.
+
+Remove anonymous users? [Y/n] y
+ ... Success!
+</code></pre>
+
+<h3>Bash script</h3>
+
+<pre><code class="bash">
+#!/bin/sh
+
+# optionally set the url of the service
+snapctl set device-service.url="https://device-service"
+# set optional extra HTTP headers for requests to the service
+snapctl set device-service.headers='{"token": "TOKEN"}'
+
+# set an optional proposed serial identifier, depending on the service
+# this can end up being ignored;
+# this might need to be obtained dynamically
+snapctl set registration.proposed-serial="DEVICE-SERIAL"
+
+# optionally pass details of the device as the body of registration request,
+# the body is text, typically YAML;
+# this might need to be obtained dynamically
+snapctl set registration.body='mac: "00:00:00:00:ff:00"'
+</code></pre>
+
+<h2>sass</h2>
+
+<pre><code class="css">
+// Footer pattern styling
+@mixin vf-p-footer {
+
+  .p-footer {
+    border-top: 1px dotted $color-x-dark;
+    font-size: .75rem;
+    margin-bottom: 1rem;
+    padding-top: .75rem;
+
+    @media (min-width: $breakpoint-medium) {
+      font-size: .8125rem;
+    }
+
+    &__copy {
+      margin-bottom: 0;
+    }
+
+    &__links {
+      margin: 0;
+      padding: .5rem 0;
+
+      @media (min-width: $breakpoint-medium) {
+        margin-top: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+</code></pre>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>

@@ -1,2 +1,5 @@
 metadata.yaml
 build/
+yarn.lock
+.docker-project
+node_modules/

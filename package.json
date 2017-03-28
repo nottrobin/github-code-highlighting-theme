@@ -1,0 +1,18 @@
+{
+  "name": "github-highlight-theme",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "node-sass --output-style compressed theme.scss build/theme.css",
+    "watch": "node-sass ----source-map --watch theme.scss build/theme.css",
+    "test": "sass-lint theme.scss",
+    "clean": "rm -r build/"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/nottrobin/github-highlight-theme"
+  },
+  "devDependencies": {
+    "node-sass": "4.5.1",
+    "sass-lint": "1.10.2"
+  }
+}
